@@ -1,4 +1,4 @@
-# The Architecture of University AI Agent and GPT
+# The Architecture of Panaversity AI Agent and GPT
 
 ## Prompt: We are developing a personalized generative ai based teaching content generation system, which agentic framework will be the best fit for it?
 

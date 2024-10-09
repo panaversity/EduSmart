@@ -29,7 +29,7 @@ Task 8: Build Github Action Script to build and update Next.js Website.
 
 Task 9: Build Github Action Script to build and update PDF Book of Learning Material.
 
-Task 10: Build a AI Agent that generates teaching videos from contect in github repo and Knowledge Graphs (may be in next iteration)
+Task 10: Build a AI Agent that generates teaching videos from content in github repo and Knowledge Graphs (may be in next iteration)
 
 ---
 ## Analysis and Recommendations for Your Workflow in Developing a Personalized E-Learning AI System

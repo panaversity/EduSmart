@@ -1,4 +1,13 @@
-# The Architecture of Panaversity AI Agent and GPT
+# EduSmart: Panaversity Personalized Learning Platform
+
+
+EduSmart is an advanced personalized learning platform that tailors educational content to individual students by integrating three core technologies:
+
+1. **Knowledge Graphs**: For structuring educational content and tracking student knowledge.
+2. **Large Language Models (LLMs)**: For generating customized explanations and engaging with students in natural language.
+3. **AI Agents**: For orchestrating the learning experience, adapting to student needs, and providing real-time assistance.
+
+---
 
 ## Prompt: We are developing a personalized generative ai based teaching content generation system, which agentic framework will be the best fit for it?
 

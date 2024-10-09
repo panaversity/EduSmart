@@ -8,8 +8,22 @@ EduSmart is an advanced personalized learning platform that tailors educational 
 3. **AI Agents**: For orchestrating the learning experience, adapting to student needs, and providing real-time assistance.
 
 ---
+## Tasks: Work Breakdown into Independent Smaller Projects
 
-**Analysis and Recommendations for Your Workflow in Developing a Personalized E-Learning AI System**
+
+Task 1: Build GQL Schema for Course Content Knowledge Graph ( https://github.com/panaversity/learn-applied-generative-ai-fundamentals/tree/main/22_knowledge_graphs_genai_agents/02_understanding_gql )
+Task 2: Build GQL Schema for Course Content Questions/Interaction Knowledge Graph
+Task 3: Build GQL Schema for Student Tacking and Course Personalization Knowledge Graph
+Task 4: Build AI Agent (LangGraph) that Generates Learing Content and pushes metadata into a Knowledge Graph (Neo4j) and markdown including metadata (directories and https://www.npmjs.com/package/front-matter) in GitHub.
+Task 5: Build AI Agent that Genenerates Questions/Interactions
+Task 6: Build Chat Bot that interacts with Students, and interacts with them to track their performance and fill the learning gaps.
+Task 7: Build Github Action Scripts to syncronize each push with the Knowledge Graph (Neo4j).
+Task 8: Build Github Action Script to build and update Next.js Website.
+Task 9: Build Github Action Script to build and update PDF Book of Learning Material.
+Task 10: Build a AI Agent that generates teaching videos from contect in github repo and Knowledge Graphs (may be in next iteration)
+
+---
+## Analysis and Recommendations for Your Workflow in Developing a Personalized E-Learning AI System
 
 ---
 

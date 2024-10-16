@@ -85,7 +85,7 @@ CREATE GRAPH TYPE EduSmartSchema AS {
     },
 
     DIRECTED EDGE covers {} CONNECTING (Interaction -> Topic),
-    DIRECTED EDGE attempts {} CONNECTING (Student -> Interaction),
+
 }
 ```
 

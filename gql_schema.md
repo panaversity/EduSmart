@@ -58,7 +58,7 @@ CREATE GRAPH TYPE EduSmartSchema AS {
    },
    DIRECTED EDGE taught {} CONNECTING (Course -> TextBook),
 
-  NODE :Content {
+  NODE :Topic {
       title :: STRING NOT NULL,
       url :: STRING,
       details :: STRING,
@@ -67,15 +67,9 @@ CREATE GRAPH TYPE EduSmartSchema AS {
       sequenceNumber :: INT NOT NULL
    },
 
-   NODE :Chapter => :Content {
-
-   } AS Chapter,
-  DIRECTED EDGE contains {} CONNECTING (TextBook -> Chapter),
-   
-   NODE :Topic => :Content {
-   } AS Topic,
+  DIRECTED EDGE contains {} CONNECTING (Topic -> TextBook),
   DIRECTED EDGE contains {} CONNECTING (Topic -> Topic),
-  DIRECTED EDGE contains {} CONNECTING (Chapter -> Topic),
+  
   DIRECTED EDGE knows 
       { 
         level :: INT NOT NULL, 

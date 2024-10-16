@@ -1,4 +1,4 @@
-# EduSmartSchema 
+# EduSmart Schema 
 
 Learning Resource:
 

@@ -1,6 +1,6 @@
 ## Claude.ai Artifacts for EduSmart ChatBot
 
-**Claude.ai Artifacts** are a feature within the Claude.ai platform that enhances collaboration and creativity. Here’s a quick overview:
+**Claude.ai Artifacts** are a feature within the Claude.ai platform that enhances collaboration and creativity. We are going to built this functionality into our chatbot. Here’s a quick overview:
 
 ### What Are Claude.ai Artifacts?
 Artifacts turn conversations with Claude into a more creative and collaborative experience. They provide a dedicated window to instantly see, iterate, and build on the work you create with Claude.

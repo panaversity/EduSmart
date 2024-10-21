@@ -4,6 +4,14 @@ Learning Resource:
 
 https://www.milowski.com/journal/entry/2024-06-26T12:00:00-07:00/
 
+In GQL (Graph Query Language), the ISO standard syntax 
+for comments is the same as in many other programming 
+languages. You use two forward slashes (//) for 
+single-line comments or /* and */ for multi-line 
+comments.
+
+
+
 
 EduSmartSchema declared via phrases:
 
@@ -18,7 +26,7 @@ CREATE GRAPH TYPE EduSmartSchema AS {
       name :: STRING NOT NULL,
       description :: STRING
    },
-   DIRECTED EDGE contains {} CONNECTING (Program -> Course),
+   3.
    NODE :Class {
       section_number :: STRING NOT NULL,
       start_date :: DATE NOT NULL,

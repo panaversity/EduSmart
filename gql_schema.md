@@ -4,6 +4,8 @@ Learning Resource:
 
 https://www.milowski.com/journal/entry/2024-06-26T12:00:00-07:00/
 
+https://jtc1info.org/wp-content/uploads/2024/04/2024-Article-39075-Database-Language-GQL.docx.pdf
+
 In GQL (Graph Query Language), the ISO standard syntax 
 for comments is the same as in many other programming 
 languages. You use two forward slashes (//) for 
@@ -256,4 +258,24 @@ CREATE GRAPH TYPE EduSmartSchema AS {
     DIRECTED EDGE has_course_memory {} CONNECTING (Student -> StudentCourseStatus)
 }
 
+
+```
+
+https://shorten.wilenskid.pl/fVVbWE
+```gql
+/* Insert nodes */
+INSERT (:Program {name: 'Certified Generative AI Engineer', description: 'This is Agentic and Physical AI Program'})
+
+INSERT (:Course {course_number: 'ai-101', name: 'Python AI', description: 'Coding Python using AI'})
+
+MATCH (p : Program {name: 'Certified Generative AI Engineer'})
+ ,(c : Course {course_number: 'ai-101'})
+INSERT (p)-[:contains]->(c)
+
+/* Insert two nodes and an edge */
+INSERT (:Program {name: 'AI', description: 'AI Program' })
+ -[:contains {}]->
+ (:Course {course_number: 'ai-201', name: 'Generative AI', description: 'Coding in Generative AI'})
+
+ 
 ```

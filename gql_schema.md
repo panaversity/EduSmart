@@ -17,6 +17,7 @@ CREATE GRAPH TYPE EduSmartSchema AS {
       description :: STRING
    },
    
+   
    NODE :Course {
       course_number :: STRING NOT NULL,
       name :: STRING NOT NULL,

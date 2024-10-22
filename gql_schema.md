@@ -57,6 +57,8 @@ CREATE GRAPH TYPE EduSmartSchema AS {
       familyName :: STRING NOT NULL,
       birthDate :: DATE NOT NULL,
       signupDate :: DATE NOT NULL
+      birthDate :: DATE NOT NULL,
+      signupDate :: DATE NOT NULL
    },
        
     NODE :Student => :Person {

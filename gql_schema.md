@@ -8,7 +8,7 @@ https://jtc1info.org/wp-content/uploads/2024/04/2024-Article-39075-Database-Lang
 
 EduSmartSchema declared via phrases:
 
-https://shorten.wilenskid.pl/cSKZv6
+https://shorten.wilenskid.pl/M4unFR
 
 ```gql
 CREATE GRAPH TYPE EduSmartSchema AS {

@@ -8,30 +8,67 @@ EduSmart is an advanced personalized learning platform that tailors educational 
 3. **AI Agents**: For orchestrating the learning experience, adapting to student needs, and providing real-time assistance.
 
 ---
-## Tasks: Work Breakdown into Independent Smaller Projects
 
 
-Task 1: Build GQL Schema for Course Content Knowledge Graph ( https://github.com/panaversity/learn-applied-generative-ai-fundamentals/tree/main/22_knowledge_graphs_genai_agents/02_understanding_gql )
+## EduSmart Projects
 
-Task 2: Build GQL Schema for Course Content Questions/Interaction Knowledge Graph
 
-Task 3: Build GQL Schema for Student Tacking and Course Personalization Knowledge Graph
+### Task 1: GQL Schema via Phrases
+Build a GQL schema via phrases which stores Program and Course Content, Interactions, Student Profile, Tracks Students, etc. 
 
-Task 4: Build AI Agent (LangGraph) that Generates Learing Content and pushes metadata into a Knowledge Graph (Neo4j) and markdown including metadata (directories and https://www.npmjs.com/package/front-matter) in GitHub.
+Technology Used: GQL Editor
 
-Task 5: Build AI Agent that Genenerates Questions/Interactions
-
-Task 6: Build Chat Bot that interacts with Students, and interacts with them to track their performance and fill the learning gaps.
-
-Task 7: Build Github Action Scripts to syncronize each push with the Knowledge Graph (Neo4j).
-
-Task 8: Build Github Action Script to build and update Next.js Website.
-
-Task 9: Build Github Action Script to build and update PDF Book of Learning Material.
-
-Task 10: Build a AI Agent that generates teaching videos from content in github repo and Knowledge Graphs (may be in next iteration)
+Team: Junaid, Osman, Wania
 
 ---
+
+### Task 2: Dummy Neo4j AuraDB
+Develop a Python UV Console Project that creates a dummy Neo4j AuraDB based on Schema created in Tast 1 which teams will use to develop there code until the real DB is up and running.
+
+Technology: Neo4j AuraDB, Neo4j Python SDK, Python UV
+
+Team: Suhail, Zulfiqar Ali Mir
+
+---
+
+## Task 3: Student Chat with Canvas
+This will be a student chatbot which will interact with the student and help him in his learning jounery. Intially it will create a student profile. It will also show the student the content (in markdown) which will be taught in the next class and the timing and detials of each class. After each class it will interact with the student to identify his understanding and help him/her with personalized content. It will also take the midterm and final evalution exams.  
+
+Technology: Next.js, [Open Canvas](https://github.com/langchain-ai/open-canvas), LangGraph, LangChain, Neo4j AuraDB 
+
+Team: Junaid, Wania
+
+---
+
+## Task 4: Teacher Chat with Canvas
+This will be a teacher chatbot which will generate content (Textbook and Interaction) and keep the teacher in the loop. It will also help the teacher track student progress. 
+
+Technology: Next.js, [Open Canvas](https://github.com/langchain-ai/open-canvas), LangGraph, LangChain, Neo4j AuraDB 
+
+Team: Rehan, Osman
+
+---
+
+## Task 5: Github Textbook Repository Creator and Updater
+a. This project part will take the content (Textbook) stored in Neo4j AuraDB and create a GitHub Repository. The Python script will push the content in the repository. In each repository file it will also store the metadata in [front matter](https://www.npmjs.com/package/front-matter)
+b. This project part will syncronize the GitHub to the Neo4j AuraDB using the GitHub Actions. 
+
+Technology: Neo4j AuraDB, Neo4j Python SDK, GitHub, GitHub Actions, Python UV
+
+Team: 
+
+---
+
+
+## Task 6: Classroom Podcast
+Just like the [NotebookML](https://freshvanroot.com/blog/notebooklm-google) from Google this project will create a Podcast covering Topics in the course. There will be single teachers and multiple students in the class. The teacher will explain a short lecture on a topic and students will ask question from the teacher. First a text script will be generated than it will converted into speech. 
+
+Technology: text-to-speech generators 
+
+---
+
+
+
 ## Analysis and Recommendations for Your Workflow in Developing a Personalized E-Learning AI System
 
 ---

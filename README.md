@@ -49,7 +49,7 @@ This will be a teacher chatbot which will generate content (Textbook and Interac
 
 4c. Track students and generate Student Analysis Reports
 
-Technology: Next.js, [Open Canvas](https://github.com/langchain-ai/open-canvas), LangGraph, LangChain, Neo4j AuraDB 
+Technology: Next.js, [Open Canvas](https://github.com/langchain-ai/open-canvas) and/or [CoAgents](https://www.copilotkit.ai/blog/everything-you-need-to-build-agent-native-applications), LangGraph, LangChain, Neo4j AuraDB 
 
 Team: Rehan,
 

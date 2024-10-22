@@ -34,7 +34,7 @@ This will be a student chatbot which will interact with the student and help him
 
 4b. Take the mid term and final quizzes. 
 
-Technology: Next.js, [Open Canvas](https://github.com/langchain-ai/open-canvas), LangGraph, LangChain, Neo4j AuraDB 
+Technology: Next.js, [Open Canvas](https://github.com/langchain-ai/open-canvas) and/or [CoAgents](https://www.copilotkit.ai/blog/everything-you-need-to-build-agent-native-applications), LangGraph, LangChain, Neo4j AuraDB 
 
 Team: Junaid, Wania
 

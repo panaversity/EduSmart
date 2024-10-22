@@ -23,7 +23,7 @@ Team: Suhail
 
 ---
 
-## Task 3: Student Chat with Canvas
+## Task 3: Student Chatbot (Canvas)
 This will be a student chatbot which will interact with the student and help him in his learning jounery. Intially it will create a student profile. It will also show the student the content (in markdown) which will be taught in the next class and the timing and detials of each class. After each class it will interact with the student to identify his understanding and help him/her with personalized content. It will also take the midterm and final evalution exams. 
 
 3a. Create Student Profile by Interacting with him/her covering Python, Maths, English, and IQ

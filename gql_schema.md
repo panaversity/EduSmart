@@ -74,8 +74,8 @@ CREATE GRAPH TYPE EduSmartSchema AS {
   DIRECTED EDGE HAS_PROFILE {} CONNECTING (Student -> Profile),
   DIRECTED EDGE TAKE_ADMISSION {} CONNECTING (Student -> Program),
   DIRECTED EDGE REGISTERED {
-  "fee_status":: STRING, 
-  "admission_date":: DATE 
+    fee_status:: STRING, 
+    admission_date:: DATE 
   } CONNECTING (Student -> Section), // Suppose Fee Paid
 
   NODE :Teacher => :Person {

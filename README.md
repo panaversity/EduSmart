@@ -19,7 +19,7 @@ Develop a Python UV Console Project that creates a dummy Neo4j AuraDB based on S
 
 Technology: Neo4j AuraDB, Neo4j Python SDK, Python UV
 
-Team: Suhail
+Team: Suhail, Raheela
 
 ---
 
@@ -36,7 +36,7 @@ This will be a student chatbot which will interact with the student and help him
 
 Technology: Next.js, [Open Canvas](https://github.com/langchain-ai/open-canvas), LangGraph, LangChain, Neo4j AuraDB 
 
-Team: Junaid, Wania
+Team: Junaid, Wania, Ahmed
 
 ---
 

@@ -10,7 +10,7 @@ In GQL (Graph Query Language), the ISO standard syntax for comments is the same 
 
 EduSmartSchema declared via phrases:
 
-https://shorten.wilenskid.pl/N9T.Gh
+https://shorten.wilenskid.pl/VrBtQg
 ```gql
 CREATE GRAPH TYPE EduSmartSchema AS {
    NODE :Program {

@@ -71,7 +71,7 @@ Team: Rehan,
 
 ---
 
-### Task 5: Github Textbook Repository Creator and Updater
+### Task 5: Github Textbook Repository Creator and Updater (Optional)
 5a. This project part will take the content (Textbook) stored in Neo4j AuraDB and create a GitHub Repository. The Python script will push the content in the repository. In each repository file it will also store the metadata in [front matter](https://www.npmjs.com/package/front-matter)
 
 5b. This project part will syncronize the GitHub to the Neo4j AuraDB using the GitHub Actions. 

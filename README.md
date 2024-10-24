@@ -24,7 +24,14 @@ Team: Suhail, Raheela
 ---
 
 ### Task 3: Student Chatbot (Artifact/Canvas)
-This will be a student chatbot which will interact with the student and help him in his learning jounery. Intially it will create a student profile. It will also show the student the content (in markdown) which will be taught in the next class and the timing and detials of each class. After each class it will interact with the student to identify his understanding and help him/her with personalized content. It will also take the midterm and final evalution exams. 
+This will be a student chatbot which will interact with the 
+student and help him in his learning jounery. Intially it will
+create a student profile. It will also show the student the 
+content (in markdown) which will be taught in the next class and 
+the timing and detials of each class. After each class it will 
+interact with the student to identify his understanding and help 
+him/her with personalized content. It will also take the midterm
+and final evalution exams. The Claude Artifact type chatbot is a perfect fit for students.
 
 3a. Create Student Profile by Interacting with him/her covering Python, Maths, English, and IQ
 
@@ -41,7 +48,10 @@ Team: Junaid, Wania, Ahmed
 ---
 
 ### Task 4: Teacher Chatbot (Artifact/Canvas)
-This will be a teacher chatbot which will generate content (Textbook and Interaction) and keep the teacher in the loop. It will also help the teacher track student progress.
+This will be a teacher chatbot which will generate content 
+(Textbook and Interaction) and keep the teacher in the loop. 
+It will also help the teacher track student progress.
+The OpenAI Canvas type chatbot is a perfect fit for the teachers.
 
 4a. Generate Text Book Table of Content and Content in AuraDB
 

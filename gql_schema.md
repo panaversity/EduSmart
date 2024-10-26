@@ -10,7 +10,7 @@ In GQL (Graph Query Language), the ISO standard syntax for comments is the same 
 
 EduSmartSchema declared via phrases:
 
-https://shorten.wilenskid.pl/VrBtQg
+https://shorten.wilenskid.pl/~d84zE
 ```gql
 CREATE GRAPH TYPE EduSmartSchema AS {
    NODE :Program {
@@ -188,24 +188,40 @@ CREATE GRAPH TYPE EduSmartSchema AS {
         interaction_id :: STRING NOT NULL, // pk
         total_questions :: INT, // number of questions
         creation_date :: DATE NOT NULL,
-        topic_ids :: LIST<ANY>, // have both topic ids & names for display
         end_date :: DATE
     },
 
-    DIRECTED EDGE HAS_TOPIC {} CONNECTING (Interaction -> Topic),
-    DIRECTED EDGE PARTICIPATES_IN {
-        score :: INT,
-        attempt_date :: DATE NOT NULL,
-        percentage :: FLOAT
-    } CONNECTING (Student -> Interaction),
-    DIRECTED EDGE ATTEMPTED_QUESTION {
-        score :: INT,
-        answer :: STRING,
-        attempt_date :: DATE NOT NULL
-    } CONNECTING (Interaction -> Question),
+    // StudentInteraction Node
+    NODE :StudentInteraction {
+        student_interaction_id :: STRING NOT NULL, // PK
+        status :: STRING NOT NULL,                 // 'assigned', 'in_progress', 'completed'
+        assigned_date :: DATE NOT NULL,
+        start_date :: DATE,
+        last_updated :: DATE,
+        percentage :: FLOAT,
+        score :: INT
+    },
+    
+    // Learning Exchange Node for tracking Q&A
+    NODE :LearningExchange {
+        exchange_id :: STRING NOT NULL,       // PK
+        student_response :: STRING NOT NULL,  // The actual answer given
+        is_correct :: BOOLEAN,                // Correctness flag
+        needs_reinforcement :: BOOLEAN,       // Flag for further review
+        exchange_timestamp :: DATE NOT NULL,
+        sequence_number :: INTEGER NOT NULL,    // Order in interaction
+        feedback :: STRING                      // Optional feedback/explanation
+    },
+
+    DIRECTED EDGE HAS_PARTICIPATION {} CONNECTING (Student -> StudentInteraction),
+    DIRECTED EDGE ASSIGNED_TO_INTERACTION {} CONNECTING (StudentInteraction -> Interaction),
+    DIRECTED EDGE COVERS_TOPIC {} CONNECTING (Interaction -> Topic),
+    
+    DIRECTED EDGE INCLUDES_LEARNING_EXCHANGE {} CONNECTING (StudentInteraction -> LearningExchange),
+    DIRECTED EDGE ANSWERED_QUESTION {} CONNECTING (LearningExchange -> Question),
 
 
-/*    // 3. InitialInteraction
+/*    // 3. DEPRECIATED: InitialInteraction
     NODE :InitialInteraction {
         id :: STRING NOT NULL, // pk
         title :: STRING NOT NULL,
@@ -233,7 +249,7 @@ CREATE GRAPH TYPE EduSmartSchema AS {
       passing_score :: INTEGER
     },
     
-    NODE : Assignment_Project {
+    NODE :Assignment_Project {
       id :: STRING NOT NULL, // pk
       title :: STRING,
       details :: STRING,
@@ -308,7 +324,7 @@ CREATE GRAPH TYPE EduSmartSchema AS {
     DIRECTED EDGE HAS_COURSE_SCHEDULE {} CONNECTING (Course -> OnlineSessionSchedule), //course has course schedule
     DIRECTED EDGE TEACHES_TOPIC {"date":: STRING} CONNECTING (OnlineSessionSchedule -> Topic), //course has course schedule
 
-   Node :Notification {
+    Node :Notification {
        id :: STRING NOT NULL, // pk
       content:: STRING,
       notification_time :: DATE NOT NULL
